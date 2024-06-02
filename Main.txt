@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car("Toyota", "Corolla", 2020, 500, 25);
+        System.out.println("Car Make: " + car.getMake());
+        System.out.println("Car Model: " + car.getModel());
+        System.out.println("Car Year: " + car.getYear());
+        System.out.println("Car Fuel Efficiency: " + car.calculateFuelEfficiency() + " miles per gallon");
+
+        Truck truck = new Truck("Ford", "F-150", 2021, 800, 40, 2);
+        System.out.println("\nTruck Make: " + truck.getMake());
+        System.out.println("Truck Model: " + truck.getModel());
+        System.out.println("Truck Year: " + truck.getYear());
+        System.out.println("Truck Fuel Efficiency: " + truck.calculateFuelEfficiency() + " miles per gallon");
+    }
+}
